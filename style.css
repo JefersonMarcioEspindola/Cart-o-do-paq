@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.app {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #757575;
+    justify-content: center;
+    align-items: center;
+    padding: 1.55rem 0;
+}
+
+/*===========================================================================================*/
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastro input {
+    width: 50%;
+    border: none;
+    padding: 1rem 6rem 1rem 1rem;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.botãoenviar {
+    border-radius: 10px;
+    border: none;
+    padding: 1rem 2rem;
+    background-color: #0091c9;
+    color: white;
+}
+
+/*===========================================================================================*/
+
+.cracha {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card {
+    border-radius: 20px;
+    min-width: 408px;
+    min-height: 618px;
+    background-image: url(./img/bg_card.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.infos {
+    margin-top: 7rem;
+}
+
+.infos h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.infos p {
+    margin-top: -15px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.infos p:last-child {
+    margin-top: -15px;
+    color: #0A4E74;
+}
+
+.footer {
+    color: white;
+    margin-top: 85px;
+    margin-bottom: -30px;
+    font-weight: 400;
+}
+
+
+

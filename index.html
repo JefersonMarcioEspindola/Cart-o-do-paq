@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="info">
+        <div class="cadastro">
+          <input placeholder="Nome" type="text" id="nome"/>
+          <input placeholder="Idade" type="text" id="idade"/>
+          <input placeholder="Cargo" type="text" id="cargo"/>
+          <input type="file" name="arquivos" class="btn btn-success" multiple id="image"/>
+          <button class="botãoenviar" onclick="atualizarCracha()">Enviar</button>
+        </div>
+      </div>
+      <div class="cracha">
+        <div class="card">
+          <div class="banner">
+            <img src="" alt="" />
+          </div>
+          <div class="infos">
+            <img src="./img/perfil.png" width="200px" alt="" id="img-cracha"/>
+            <h2 id="nome-cracha">NOME</h2>
+            <p id="idade-cracha">IDADE</p>
+            <p id="cargo-cracha">CARGO</p>
+          </div>
+          <dif class="footer">www.prototipandoaquebrada.org</dif>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
