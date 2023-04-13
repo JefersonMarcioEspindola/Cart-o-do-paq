@@ -1,14 +1,30 @@
-body {
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+
     font-family: 'Poppins', sans-serif;
-}
+  }
+  
+  #page {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
 .app {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
     flex-direction: row;
-    width: 100%;
-    background-color: #757575;
+    background-image: linear-gradient(rgba(6, 26, 34, 0.9), rgba(6, 26, 34, 0.9)), url(./img/bg.jpg);
+    background-size: cover;
     justify-content: center;
     align-items: center;
     padding: 1.55rem 0;
@@ -29,19 +45,58 @@ body {
     align-items: center;
 }
 
+.cadastro h2{
+    color: #f3f3f3;
+    padding-bottom: 0.7rem;
+    border-bottom: 4px solid #0081b4;
+}
+
 .cadastro input {
-    width: 50%;
+    min-width: 500px;
+    min-height: 50px;
     border: none;
-    padding: 1rem 6rem 1rem 1rem;
-    margin-bottom: 10px;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
     border-radius: 10px;
 }
 
+input[type="file"] {
+    min-width: 532px;
+    min-height: 50px;
+    justify-content: center;
+    border: none;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #555;
+    padding: 0;
+  }
+
+  input[type="file"]::-webkit-file-upload-button {
+    background-color: #1eb4e9;
+    color: white;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    border: none;
+    margin-right: 1rem;
+  }
+  
+  input[type="file"]::-webkit-file-upload-button:hover {
+    background-color: #0081b4;
+    color: white;
+  }
+
 .botãoenviar {
+    margin-top: 1rem;
     border-radius: 10px;
     border: none;
     padding: 1rem 2rem;
-    background-color: #0091c9;
+    background-color: #1eb4e9;
+    color: white;
+}
+
+.botãoenviar:hover {
+    background-color: #0081b4;
     color: white;
 }
 
@@ -63,13 +118,29 @@ body {
     background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     text-align: center;
+    transition: all 0.3s linear;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px #1eb4e9,
+    0 0 50px #1eb4e9;
+    transform: scale(1.03);
 }
 
 .infos {
-    margin-top: 7rem;
+    margin-top: 12rem;
+}
+
+.infos img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    margin: -1rem;
+    padding: 1rem;
 }
 
 .infos h2 {
@@ -94,6 +165,3 @@ body {
     margin-bottom: -30px;
     font-weight: 400;
 }
-
-
-

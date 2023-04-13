@@ -7,31 +7,34 @@
 
     <link rel="stylesheet" href="style.css" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
     <title>Document</title>
   </head>
   <body>
     <div class="app">
       <div class="info">
         <div class="cadastro">
-          <input placeholder="Nome" type="text" id="nome"/>
-          <input placeholder="Idade" type="text" id="idade"/>
-          <input placeholder="Cargo" type="text" id="cargo"/>
-          <input type="file" name="arquivos" class="btn btn-success" multiple id="image"/>
+          <h2>Preencha com suas Informaçoes</h2>
+          <input placeholder="Nome" type="text" id="nome" required/>
+          <input placeholder="Idade" type="number" id="idade" required/>
+          <input placeholder="Cargo" type="text" id="cargo" required/>
+          <input placeholder="Mídia" type="file" name="arquivos" class="input-style" id="image" accept=".jpg,.jpeg,.png,.gif" required/>
           <button class="botãoenviar" onclick="atualizarCracha()">Enviar</button>
         </div>
       </div>
       <div class="cracha">
-        <div class="card">
-          <div class="banner">
-            <img src="" alt="" />
+        <div class="card card-animation">
+          <div class="card">
+            <div class="infos">
+              <img src="" alt="" id="img-banner"/>
+              <h2 id="nome-cracha">NOME</h2>
+              <p id="idade-cracha">IDADE</p>
+              <p id="cargo-cracha">CARGO</p>
+            </div>
           </div>
-          <div class="infos">
-            <img src="./img/perfil.png" width="200px" alt="" id="img-cracha"/>
-            <h2 id="nome-cracha">NOME</h2>
-            <p id="idade-cracha">IDADE</p>
-            <p id="cargo-cracha">CARGO</p>
-          </div>
-          <dif class="footer">www.prototipandoaquebrada.org</dif>
         </div>
       </div>
     </div>
