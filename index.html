@@ -26,7 +26,14 @@
         </div>
       </div>
       <div class="cracha">
-        <div class="card card-animation">
+        <div class="theme-selector">
+          <select id="theme-select">
+            <option value="default">Padrão</option>
+            <option value="theme1">Tema 1</option>
+            <option value="theme2">Tema 2</option>
+            <option value="theme3">Tema 3</option>
+          </select>
+        </div>
           <div class="card">
             <div class="infos">
               <img src="" alt="" id="img-banner"/>
@@ -35,9 +42,19 @@
               <p id="cargo-cracha">CARGO</p>
             </div>
           </div>
-        </div>
       </div>
     </div>
     <script type="text/javascript" src="main.js"></script>
+    <script>
+      const themeSelect = document.getElementById('theme-select');
+      const cracha = document.querySelector('.card');
+
+      themeSelect.addEventListener('change', (event) => {
+        const selectedTheme = event.target.value;
+        cracha.classList = `card ${selectedTheme}`;
+      });
+
+      
+    </script>
   </body>
 </html>

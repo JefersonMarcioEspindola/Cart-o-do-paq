@@ -101,9 +101,33 @@ input[type="file"] {
 }
 
 /*===========================================================================================*/
+.default {
+    background-image: url(./img/themes/0.png);
+}
 
+.theme1 {
+    background-image: url(./img/themes/1.png);
+  }
+  
+.theme2 {
+    background-image: url(./img/themes/2.png);
+  }
+  
+.theme3 {
+    background-image: url(./img/themes/3.png);
+  }
+
+.theme-selector{
+    margin-top: -6rem;
+    margin-bottom: 5rem;
+}
+
+
+
+/*===========================================================================================*/
 .cracha {
     display: flex;
+    flex-direction: column;
     width: 50%;
     justify-content: center;
     align-items: center;
@@ -114,7 +138,6 @@ input[type="file"] {
     border-radius: 20px;
     min-width: 408px;
     min-height: 618px;
-    background-image: url(./img/bg_card.png);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -131,16 +154,13 @@ input[type="file"] {
 }
 
 .infos {
-    margin-top: 12rem;
+    margin-top: 10rem;
 }
 
 .infos img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-color: #f5f5f5;
-    margin: -1rem;
-    padding: 1rem;
 }
 
 .infos h2 {
